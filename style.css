@@ -19,6 +19,7 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   h1 {
@@ -32,6 +33,7 @@ body {
   .time-block{
     text-align: center;
     border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .row {
@@ -48,19 +50,19 @@ body {
     border-left: 1px dashed black; 
     padding: 10px;
   }
-  
+  /* if event is in the past color coat box gray */
   .past {
-    background-color: #d3d3d3;
+    background-color: gray;
     color:black;
   }
-  
+  /* if event is in the present color coat box yellow */
   .present {
-    background-color: #ff6961;
+    background-color: yellow;
     color:black;
   }
-  
+  /* if event is in future color coat box aquamarine */
   .future {
-    background-color: #77dd77;
+    background-color: aquamarine;
     color:black;
   }
   
@@ -75,4 +77,9 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  /* makes icons fit */
+  .far {
+    font-size: 200%;
   }
